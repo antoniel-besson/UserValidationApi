@@ -29,8 +29,7 @@ namespace UserValidationApi.Services
                 return new_user;
             }
             catch (ValidationException ex)
-            {
-                //return BadRequest(ex.Message);
+            {                
                 throw new ValidationException(ex.Message);
             }
 
