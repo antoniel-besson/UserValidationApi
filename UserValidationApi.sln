@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserValidationApi", "UserValidationApi\UserValidationApi.csproj", "{DE4EF3BF-9C51-4167-A0C1-ED19662EAD9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserValidationApi.Test", "UserValidationApi.Test\UserValidationApi.Test.csproj", "{09F6BD65-7F92-439D-A4C8-824372628D2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE4EF3BF-9C51-4167-A0C1-ED19662EAD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4EF3BF-9C51-4167-A0C1-ED19662EAD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4EF3BF-9C51-4167-A0C1-ED19662EAD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4EF3BF-9C51-4167-A0C1-ED19662EAD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F6BD65-7F92-439D-A4C8-824372628D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F6BD65-7F92-439D-A4C8-824372628D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F6BD65-7F92-439D-A4C8-824372628D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F6BD65-7F92-439D-A4C8-824372628D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {852288BF-C15A-42F7-9FC2-CB024F70A014}
+	EndGlobalSection
+EndGlobal
