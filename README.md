@@ -52,3 +52,9 @@ If you are using Visual Studio, it should open by default on the Swagger page.
     reportgenerator -reports:".\TestResults\{guid}\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
     ```
     - **Observation:** Don't forget to replace the {guid} created in the previous step.
+
+The coverage should look like this:
+![image](https://github.com/antoniel-besson/UserValidationApi/assets/90410879/aa6e7893-9b13-4c05-97a5-97160e0989c9)
+
+
+
