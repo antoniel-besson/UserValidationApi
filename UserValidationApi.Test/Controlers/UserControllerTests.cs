@@ -6,6 +6,7 @@ using UserValidationApi.Models;
 using System.ComponentModel.DataAnnotations;
 using Moq;
 using System.Threading.Tasks;
+using Castle.Core.Resource;
 
 namespace UserValidationApi.Test.Controlers
 {
@@ -36,6 +37,39 @@ namespace UserValidationApi.Test.Controlers
                 Username = "TestUser",
                 Password = "TestPassword123",
                 Email = "testuser@example.com"
+            };
+
+            _mockUserService.Setup(service => service.CreateUser(userRequest)).ReturnsAsync(mockUser);
+
+            // Act
+            var result = await _userController.CreateUser(userRequest);
+
+            // Assert
+            Assert.IsType<OkObjectResult>(result);
+            var okResult = result as OkObjectResult;
+            Assert.NotNull(okResult);
+            Assert.Equal(mockUser, okResult.Value);
+        }
+
+        [Fact]
+        public async Task CreateUser_ValidUserCustomer_ReturnsOkResult()
+        {
+            // Arrange
+            var userRequest = new UserRequest
+            {
+                Username = "TestUser",
+                Password = "TestPassword123",
+                Email = "testuser@example.com",
+                Role = UserTypeEnum.Customer
+                
+            };
+
+            var mockUser = new User
+            {
+                Username = "TestUser",
+                Password = "TestPassword123",
+                Email = "testuser@example.com",
+                Role = "Customer"
             };
 
             _mockUserService.Setup(service => service.CreateUser(userRequest)).ReturnsAsync(mockUser);
