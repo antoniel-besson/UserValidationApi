@@ -4,7 +4,6 @@ Project to demonstrate the use case for Sinqia-Bofa.
 
 ### Running the Project
 
-- The test database is a SQLite database located in this same repository.
 - To run the project, simply clone the repository and execute `dotnet run` in your terminal.
 
 ---
